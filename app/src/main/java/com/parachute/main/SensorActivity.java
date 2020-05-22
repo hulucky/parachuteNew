@@ -35,6 +35,7 @@ import java.io.IOException;
 import java.nio.charset.Charset;
 import java.security.InvalidParameterException;
 import java.text.DecimalFormat;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -315,46 +316,48 @@ public class SensorActivity extends AppCompatActivity {
             parserRecDataTg(buffer0, buffer1, buffer2, buffer3, buffer4, buffer5, buffer6);
             if (MyApp.wy1Connected) {
                 //七个距离(注意：得到的数据第一位是 ： ，所以不取，从第二位开始取)
-                String length0 = new String(buffer0, 1, 7, Charset.forName("ASCII"));
-                if (!"".equals(length0)) {
+                String length0 = new String(buffer0, 1, 7, Charset.forName("ASCII")).trim();
+                if (!"".equals(length0) && length0.matches("[0-9]*\\.{1}\\d*")) {
                     //七个位移传感器的数据
                     LengthListTg[0] = Float.parseFloat(length0) * 1000 + (float) (Math.random() - 0.5) / 10;
                 }
             }
             if (MyApp.wy2Connected) {
-                String length1 = new String(buffer1, 1, 7, Charset.forName("ASCII"));
-                if (!"".equals(length1)) {
+                String length1 = new String(buffer1, 1, 7, Charset.forName("ASCII")).trim();
+                if (!"".equals(length1) && length1.matches("[0-9]*\\.{1}\\d*")) {
                     LengthListTg[1] = Float.parseFloat(length1) * 1000 + (float) (Math.random() - 0.5) / 10;
                 }
             }
             if (MyApp.wy3Connected) {
-                String length2 = new String(buffer2, 1, 7, Charset.forName("ASCII"));
-                if (!"".equals(length2)) {
+                String length2 = new String(buffer2, 1, 7, Charset.forName("ASCII")).trim();
+                Log.i("wewqe", "制动绳1: " + Arrays.toString(buffer2));
+                Log.i("wewqe", "length2: " + length2);
+                if (!"".equals(length2) && length2.matches("[0-9]*\\.{1}\\d*")) {
                     LengthListTg[2] = Float.parseFloat(length2) * 1000 + (float) (Math.random() - 0.5) / 10;
                 }
             }
             if (MyApp.wy4Connected) {
-                String length3 = new String(buffer3, 1, 7, Charset.forName("ASCII"));
-                if (!"".equals(length3)) {
+                String length3 = new String(buffer3, 1, 7, Charset.forName("ASCII")).trim();
+                if (!"".equals(length3) && length3.matches("[0-9]*\\.{1}\\d*")) {
                     LengthListTg[3] = Float.parseFloat(length3) * 1000 + (float) (Math.random() - 0.5) / 10;
                 }
             }
             if (MyApp.wy5Connected) {
-                String length4 = new String(buffer4, 1, 7, Charset.forName("ASCII"));
-                if (!"".equals(length4)) {
+                String length4 = new String(buffer4, 1, 7, Charset.forName("ASCII")).trim();
+                if (!"".equals(length4) && length4.matches("[0-9]*\\.{1}\\d*")) {
                     LengthListTg[4] = Float.parseFloat(length4) * 1000 + (float) (Math.random() - 0.5) / 10;
                 }
             }
             if (MyApp.wy6Connected) {
-                String length5 = new String(buffer5, 1, 7, Charset.forName("ASCII"));
+                String length5 = new String(buffer5, 1, 7, Charset.forName("ASCII")).trim();
 //                Log.i("kkk", "length5: " + length5);
-                if (!"".equals(length5)) {
+                if (!"".equals(length5) && length5.matches("[0-9]*\\.{1}\\d*")) {
                     LengthListTg[5] = Float.parseFloat(length5) * 1000 + (float) (Math.random() - 0.5) / 10;
                 }
             }
             if (MyApp.wy7Connected) {
-                String length6 = new String(buffer6, 1, 7, Charset.forName("ASCII"));
-                if (!"".equals(length6)) {
+                String length6 = new String(buffer6, 1, 7, Charset.forName("ASCII")).trim();
+                if (!"".equals(length6) && length6.matches("[0-9]*\\.{1}\\d*")) {
                     LengthListTg[6] = Float.parseFloat(length6) * 1000 + (float) (Math.random() - 0.5) / 10;
                 }
             }

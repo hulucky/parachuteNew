@@ -15,7 +15,7 @@ import java.io.InputStream;
 
 public class Splash extends SplashActivity {
     String filePath = android.os.Environment.getExternalStorageDirectory()
-            + "/CZD13W矿用防坠器无线多参数测试仪/.报告模板";
+            + "/矿用防坠器无线多参数测试仪/.报告模板";
     // 需要跳转的主界面
     @Override
     public Class<?> getNavigationActivity() {
@@ -36,7 +36,7 @@ public class Splash extends SplashActivity {
     @Override
     public void setShowContent() {
         super.setShowContent();
-            setAppName("CZD13W矿用防坠器无线多参数测试仪");
+            setAppName("矿用防坠器无线多参数测试仪");
 //        setLawContent("我是法律声明");
 //        setVersionName("我是版本号");
         // 设置闪屏页的背景,参数直接传入图片id即可
@@ -49,10 +49,10 @@ public class Splash extends SplashActivity {
             // 创建文件夹
             public void run() {
                 File sd = Environment.getExternalStorageDirectory();
-                String path = sd.getPath() + "/CZD13W矿用防坠器无线多参数测试仪/.报告模板";
-                String path2 = sd.getPath() + "/CZD13W矿用防坠器无线多参数测试仪/测试报告";
-                String path3 = sd.getPath() + "/CZD13W矿用防坠器无线多参数测试仪/.防坠器加速度曲线图";
-                String path4 = sd.getPath() + "/CZD13W矿用防坠器无线多参数测试仪/软件";
+                String path = sd.getPath() + "/矿用防坠器无线多参数测试仪/.报告模板";
+                String path2 = sd.getPath() + "/矿用防坠器无线多参数测试仪/测试报告";
+                String path3 = sd.getPath() + "/矿用防坠器无线多参数测试仪/.防坠器加速度曲线图";
+                String path4 = sd.getPath() + "/矿用防坠器无线多参数测试仪/软件";
                 File file = new File(path);
                 File file2 = new File(path2);
                 File file3 = new File(path3);
@@ -82,7 +82,7 @@ public class Splash extends SplashActivity {
 
 
         String filePath1;
-        filePath1 = Environment.getExternalStorageDirectory() + "/CZD13W矿用防坠器无线多参数测试仪/软件";
+        filePath1 = Environment.getExternalStorageDirectory() + "/矿用防坠器无线多参数测试仪/软件";
 
                File file3 = new File(filePath1 + to3);
         File file4 = new File(filePath1 + to4);

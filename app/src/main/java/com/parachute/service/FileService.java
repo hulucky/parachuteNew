@@ -14,7 +14,7 @@ public class FileService {
 	/***/
 	private Context context;
 	/**�ļ�������*/
-	private static final String FOLDER_NAME = "/CZD13W矿用防坠器无线多参数测试仪/.防坠器加速度曲线图/";
+	private static final String FOLDER_NAME = "/矿用防坠器无线多参数测试仪/.防坠器加速度曲线图/";
 	
 	private static final String TAG = "FileService";
 	

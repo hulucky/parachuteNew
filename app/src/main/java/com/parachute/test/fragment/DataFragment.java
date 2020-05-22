@@ -477,12 +477,12 @@ public class DataFragment extends Fragment {
             // setting.setCharacterEncoding("gb2312");
             Workbook workbook = Workbook.getWorkbook(new File(Environment
                     .getExternalStorageDirectory().getAbsolutePath()
-                    + "/CZD13W矿用防坠器无线多参数测试仪/.报告模板/防坠器报告.xls"), setting);
+                    + "/矿用防坠器无线多参数测试仪/.报告模板/防坠器报告.xls"), setting);
 
             WritableWorkbook writableWorkbook = Workbook.createWorkbook(
                     new File(Environment.getExternalStorageDirectory()
                             .getAbsolutePath()
-                            + "/CZD13W矿用防坠器无线多参数测试仪/测试报告/"
+                            + "/矿用防坠器无线多参数测试仪/测试报告/"
                             + mTask.getUnitName()
                             + "_"
                             + mTask.getNumber()
@@ -606,7 +606,7 @@ public class DataFragment extends Fragment {
             c++;
             // 添加图片
 
-            File mCurve = new File("mnt/sdcard" + "/CZD13W矿用防坠器无线多参数测试仪/.防坠器加速度曲线图/"
+            File mCurve = new File("mnt/sdcard" + "/矿用防坠器无线多参数测试仪/.防坠器加速度曲线图/"
                     + myApp.getSnapName() + "" + ".png");
             if (mCurve != null) {
                 ws6.addImage(new WritableImage(1, 18, 2, 15, mCurve));
@@ -620,7 +620,7 @@ public class DataFragment extends Fragment {
         try {
             Intent intent = getExcelFileIntent(new File(Environment
                     .getExternalStorageDirectory().getAbsolutePath()
-                    + "/CZD13W矿用防坠器无线多参数测试仪/测试报告/"
+                    + "/矿用防坠器无线多参数测试仪/测试报告/"
                     + mTask.getUnitName()
                     + "_"
                     + mTask.getNumber() + "_" + date + ".xls"));

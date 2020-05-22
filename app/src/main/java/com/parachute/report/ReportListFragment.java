@@ -52,7 +52,7 @@ public class ReportListFragment extends Fragment {
     RelativeLayout activityMain;
 
     List<File> list = new ArrayList<File>();
-    public static final String SDCard = Environment.getExternalStorageDirectory().getAbsolutePath() + "/CZD13W矿用防坠器无线多参数测试仪/测试报告";
+    public static final String SDCard = Environment.getExternalStorageDirectory().getAbsolutePath() + "/矿用防坠器无线多参数测试仪/测试报告";
     public static String currDir = SDCard;
     private ReportAdapter adapter;
     private ReportActivity mActivity;

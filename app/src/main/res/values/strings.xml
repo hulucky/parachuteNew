@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">CZD13W矿用防坠器无线多参数测试仪</string>
+    <!--<string name="app_name">CZD13W矿用防坠器无线多参数测试仪</string>-->
+    <string name="app_name">矿用防坠器无线多参数测试仪</string>
 
     <string name="title_activity_create_task">创建测试任务</string>
 

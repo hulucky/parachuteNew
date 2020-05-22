@@ -55,7 +55,7 @@ public class PdfguideActivity extends AppCompatActivity implements OnPageChangeL
     }
 
     private void initEvent() {
-        String[] img_text = { "CZD13W矿用防坠器无线多参数测试仪使用说明书"
+        String[] img_text = { "矿用防坠器无线多参数测试仪使用说明书"
         };
         Intent intent = getIntent();
         int dex = intent.getIntExtra("pdf", 0);
